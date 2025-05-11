@@ -1,329 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK.Sophea</title>
+    <meta name="description" content="Premium skincare products by SK.Sophea. Discover our sunscreen, sun gel, and nourishing creams for radiant skin.">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://sksophea.store/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SK.Sophea - Premium Skincare">
+    <meta property="og:description" content="Premium skincare products for radiant, healthy skin">
+    <meta property="og:image" content="https://sksophea.store/sunscreen1.jpg">
 
-        <!-- HTML Meta Tags -->
-<title>SK.Sophea</title>
-<meta name="description" content="">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="sksophea.store">
+    <meta property="twitter:url" content="https://sksophea.store/">
+    <meta name="twitter:title" content="SK.Sophea - Premium Skincare">
+    <meta name="twitter:description" content="Premium skincare products for radiant, healthy skin">
+    <meta name="twitter:image" content="https://sksophea.store/sunscreen1.jpg">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://sksophea.store/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SK.Sophea">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://sksophea.store/sunscreen1.jpg">
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="sksophea.store">
-<meta property="twitter:url" content="https://sksophea.store/">
-<meta name="twitter:title" content="SK.Sophea">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://sksophea.store/sunscreen1.jpg">
-
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="styles.scss">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>SK.Sophea</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                   <h1> <a href="#" class="nav__logo">SK.Sophea</a> </h1>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <!-- <li class="nav__item"><a href="#about" class="nav__link">About</a></li> -->
-                        <li class="nav__item"><a href="#skills" class="nav__link">Products</a></li>
-                        <!-- <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
-                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">SK.<span>Sophea</span></a>
+                <div class="nav-links" id="navLinks">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61573582633020" class="cta-button">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <!-- <main class="l-main"> -->
-            <!--===== HOME =====-->
-            <!-- <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hello,<br>I'am <span class="home__title-color">Vibol</span><br> IT support, <br> Web Developer </h1>
+  
 
-                    <a href="https://t.me/Vibol_by" class="button">Contact For Freelance</a>
-                </div> -->
-
-                <!-- <div class="home__social"> -->
-                    <!-- <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a> -->
-                    <!-- <a href="https://github.com/Vibol1" class="home__social-icon"><i class='bx bxl-github' ></i></a> -->
-                <!-- </div> -->
-
-                <!-- <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="5" href="Screenshot1.png"/>
-                        </g>
-                    </svg>
-                   
-                </div> -->
-               
-            </section>
-
-            <!--===== ABOUT =====-->
-            <!-- <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="Screenshot1.png" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Vibol</h2>
-                        <p class="about__text">- i'm friendly and enjoy with our working time with respectful on my teammate. <br><br> - Im also work as Deverloper at western university on web project,
-                            Western University Application and handle many project with my team. <br><br> - I want to challenge myself with my new experience as part
-                            of learning outside of the university.</p>           
-                    </div>                                   
-                </div>
-            </section> -->
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Products</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <!-- <h2 class="skills__subtitle"> SK.Sophea</h2> -->
-                        <div>
-                            <h2 class="about__subtitle">SUNSCREEN</h2>
-                            <p class="about__text">• អត្ថប្រយោជន៍ <br> <br>
-                                • 2in1 Sunscreen ឡេលាបមុខការពារកម្ដៅថ្ងៃ និងបិតបាំងស្នាម
-                            <br>• ការពារកម្ដៅថ្ងៃបានដល់ SPF50+++ <br>
-                            • បិតបាំងស្នាមលើផ្ទៃមុខ មិនកក មិនប្រតាក ធន់និងទឹក<br>
-                            • មាន Moisture ក្នុងទីបស្រាប់ <br>
-                            • សាច់ឡេពណ៌ផ្កាឈូកជួយ Tone up និងធ្វើអោយស្បែកមុខភ្លឺ <br>
-                            • ចំណុះ 50g</p>           
-                           <br>
-                           <a href="https://www.facebook.com/profile.php?id=61573582633020"> <button> contact 
-                            </button></a>
-                        </div>                                   
-                    </div>
-                    
-                    <div>              
-                        <img src="sunscreen1.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills section" id="skills">
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <!-- <h2 class="skills__subtitle"> SK.Sophea</h2> -->
-                        <div>
-                            <h2 class="about__subtitle">SUN GEL</h2>
-                            <p class="about__text">• អត្ថប្រយោជន៍ <br><br>
-                                • 2in1 Sungel អាចធ្វើជា Primer មុន makeup best Recommend <br>• មិនថាអ្នកមានស្បែកងាយរោលប្រតិកម្ម គឺអាចប្រើប្រាស់បាន<br>
-                                • ប្រើមុន Suncreen ក៏បាន ប្រើតែ Sungel ក៏បាន <br>
-                                • ជួយការពារការឡើងជាំ ពីកំដៅថ្ងៃ
-                                • ជួយទប់ស្កាត់ភាពចាស់មុនអាយុ (ប្រើបានទាំងមនុស្សប្រុសនិងមនុស្សស្រី) <br>
-                                • ជួយទប់ខ្លាញ់ជាតិប្រេង បានយ៉ាងល្អ <br>
-                                • ធ្វើឱ្យស្បែកមុខត្រជាក់ ពេលដែល apply <br>
-                                • អ្នកដែលមានស្បែកប្រតិកម្មជាមួយនឹង Suncreen អាចប្រើប្រាស់បានដែរ
-                                </p>           
-                            <br>
-                            <a href="https://www.facebook.com/profile.php?id=61573582633020"> <button> contact 
-                            </button></a>
-                        </div>                                   
-                    </div>
-                    
-                    <div>              
-                        <img src="gel2.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills section" id="skills">
-                
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <!-- <h2 class="skills__subtitle"> SK.Sophea</h2> -->
-                        <div>
-                            <h2 class="about__subtitle">DEAR DIRIN CREAM</h2>
-                            <p class="about__text">• ធាតុផ្សំសកម្ម: <br>
-                                • Kojic Acid Dipalmitate
-                                រារាំងការផលិតមេឡានីន និងធ្វើឱ្យស្បែករបស់អ្នកភ្លឺថ្លា
-                                កាត់បន្ថយសារធាតុពណ៌មេឡានីន<br> <br>
-                                
-                                •  Simmondsia Chinensis (Jojoba) Seed oil
-                                ផ្តល់សំណើមនិងមានរារាំងរបាំបាក់តេរី <br> <br>
-                                
-                                •  Ethyl Ascorbic Acid
-                                ជួយកែតម្រូវពណ៌ស្បែកធ្វើអោយស្បែកមុខសភ្លឺថ្លា រលោង និងកាត់បន្ថយស្នាមអុជខ្មៅ <br> <br>
-                                
-                                •  Niacinamide
-                                ពង្រឹងរបាំងការពារស្បែក
-                                បន្ថែមជាតិសំណើមដល់ស្បែក
-                                កាត់បន្ថយដំណើរការរលាកនៃស្បែក
-                                សាកសមសម្រាប់អ្នកដែលមានបញ្ហាមុន
-                                ជួយកាត់បន្ថយស្នាមអុជខ្មៅ <br> <br>
-                                
-                                •  Alpha-Arbutin
-                                កាត់បន្ថយស្នាមជាំ អាចម៍រុយ ស្នាមអុជខ្មៅស្នាមសល់ពីការកើតមុន
-                                ទប់ស្កាត់ការផលិតពណ៌មេឡានីន
-                                ធ្វើឲ្យពណ៌ស្បែកភ្លឺ <br> <br>
-                                
-                                •  Ginseng Extract
-                                ការដកស្រង់យិនស៊ីនជួយឲ្យស្បែកភ្លឺថ្លា ទន់រលោង
-                                កាត់បន្ថយការហើមនិងរលាក <br> <br>
-                                
-                                •  Aloe Vera Extract
-                                ផ្តល់សំណើមដល់ស្បែក ធ្វើឱ្យស្បែករលោង
-                                ជួយជំរុញស្បែកអោយភ្លឺ <br> <br>
-                                
-                                ផ្សេងៗ: <br>
-
-                                
-                                FOR ALL SKIN TYPES (សម្រាប់គ្រប់ប្រភេទស្បែក)</p>           
-                            <br>
-                            <a href="https://www.facebook.com/profile.php?id=61573582633020"> <button> contact 
-                            </button></a>
-                        </div>                                   
-                    </div>
-                    
-                    <div>              
-                        <img src="skincare1.jpg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <p class="section-subtitle">Premium formulations for healthy, glowing skin</p>
             
-            <section class="skills section" id="skills">
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <!-- <h2 class="skills__subtitle"> SK.Sophea</h2> -->
-                        <div>
-                            <h2 class="about__subtitle">ម៉ាសអង្គរអប់មុខធម្មជាតិ
-                                Natural Rice Mask</h2>
-                            <p class="about__text">• អត្ថប្រយោជន៍ <br><br>
-                                • បំប៉នថែទាំស្បែកមុខទន់រលោង <br>• ស្បែកមុខកាន់តែមានសំណើមភ្លឺថ្លា<br>
-                                • បំបាត់ស្នាមអុជខ្មៅស្នាមអាចម៍រុយ <br>
-                                • ប្រើប្រាស់បានជាប្រចាំរាល់សប្តាហ៍
-                                </p>           
-                            <br>
-                            <a href="https://www.facebook.com/profile.php?id=61573582633020"> <button> contact 
-                            </button></a>
-                        </div>                                   
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="sunscreen1.jpg" alt="SK.Sophea Sunscreen">
+                </div>
+                <div class="product-details">
+                    <h3>SUNSCREEN |  អត្ថប្រយោជន៍</h3>
+                    <div class="product-features">
+                        <p><i class="fas fa-check"></i> 2in1 Sunscreen ឡេលាបមុខការពារកម្ដៅថ្ងៃ និងបិតបាំងស្នាម</p>
+                        <p><i class="fas fa-check"></i> ការពារកម្ដៅថ្ងៃបានដល់ SPF50+++</p>
+                        <p><i class="fas fa-check"></i> បិតបាំងស្នាមលើផ្ទៃមុខ មិនកក មិនប្រតាក ធន់និងទឹក</p>
+                        <p><i class="fas fa-check"></i> មាន Moisture ក្នុងទីបស្រាប់</p>
+                        <p><i class="fas fa-check"></i> សាច់ឡេពណ៌ផ្កាឈូកជួយ Tone up និងធ្វើអោយស្បែកមុខភ្លឺ</p>
+                         <p><i class="fas fa-check"></i> ចំណុះ 50g</p>
                     </div>
-                    
-                    <div>              
-                        <img src="M12.jpeg" alt="" class="skills__img">
-                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61573582633020" class="cta-button">Order Now</a>
                 </div>
-            </section>
-
-
-            <!--===== WORK =====-->
-            <!-- <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-
-                    
-                    <a href="" class="work__img">
-                        <img src="git Udemy certi.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="IMG1.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="PXL2.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="photo 11.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="photo12.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="photo13.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="PXL3.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="PXL4.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="PXL5.jpg" alt="">
-                    </a>
-
-                    <a href="" class="work__img">
-                        <img src="IMG6.jpg" alt="">
-                    </a>
-                    
-                </div>
-            </section> -->
-
-            <!--===== CONTACT =====-->
-            <!-- <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section> -->
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">SK.Sophea</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <!-- <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a> -->
             </div>
-            <p class="footer__copy">&#169; SK.Sophea. All rigths reserved</p>
-        </footer>
+            
+            <!-- Product 2 -->
+            <div class="product-card reverse">
+                <div class="product-image">
+                    <img src="gel2.jpg" alt="SK.Sophea Sun Gel">
+                </div>
+                <div class="product-details">
+                    <h3>SUN GEL | អត្ថប្រយោជន៍</h3>
+                    <div class="product-features">
+                        <p><i class="fas fa-check"></i> 2in1 Sungel អាចធ្វើជា Primer មុន makeup best Recommend</p>
+                        <p><i class="fas fa-check"></i> មិនថាអ្នកមានស្បែកងាយរោលប្រតិកម្ម គឺអាចប្រើប្រាស់បាន</p>
+                        <p><i class="fas fa-check"></i> ប្រើមុន Suncreen ក៏បាន ប្រើតែ Sungel ក៏បាន</p>
+                        <p><i class="fas fa-check"></i> ជួយការពារការឡើងជាំ ពីកំដៅថ្ងៃ</p>
+                        <p><i class="fas fa-check"></i> ជួយទប់ស្កាត់ភាពចាស់មុនអាយុ (ប្រើបានទាំងមនុស្សប្រុសនិងមនុស្សស្រី)</p>
+                        <p><i class="fas fa-check"></i> ជួយទប់ខ្លាញ់ជាតិប្រេង បានយ៉ាងល្អ</p>
+                         <p><i class="fas fa-check"></i>ធ្វើឱ្យស្បែកមុខត្រជាក់ ពេលដែល apply</p>
+                          <p><i class="fas fa-check"></i>អ្នកដែលមានស្បែកប្រតិកម្មជាមួយនឹង Suncreen អាចប្រើប្រាស់បានដែរ</p>
+                    
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61573582633020" class="cta-button">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="skincare1.jpg" alt="SK.Sophea Dear Dirin Cream">
+                </div>
+                <div class="product-details">
+                    <h3>DEAR DIRIN CREAM | អត្ថប្រយោជន៍</h3>
+                    <div class="product-features">
+                        <p><i class="fas fa-check"></i> Kojic Acid Dipalmitate រារាំងការផលិតមេឡានីន និងធ្វើឱ្យស្បែករបស់អ្នកភ្លឺថ្លា កាត់បន្ថយសារធាតុពណ៌មេឡានីន</p>
+                        <p><i class="fas fa-check"></i> Simmondsia Chinensis (Jojoba) Seed oil ផ្តល់សំណើមនិងមានរារាំងរបាំបាក់តេរី</p>
+                        <p><i class="fas fa-check"></i> Ethyl Ascorbic Acid ជួយកែតម្រូវពណ៌ស្បែកធ្វើអោយស្បែកមុខសភ្លឺថ្លា រលោង និងកាត់បន្ថយស្នាមអុជខ្មៅ</p>
+                        <p><i class="fas fa-check"></i> Niacinamide ពង្រឹងរបាំងការពារស្បែក បន្ថែមជាតិសំណើមដល់ស្បែក កាត់បន្ថយដំណើរការរលាកនៃស្បែក សាកសមសម្រាប់អ្នកដែលមានបញ្ហាមុន ជួយកាត់បន្ថយស្នាមអុជខ្មៅ</p>
+                        <p><i class="fas fa-check"></i> Alpha-Arbutin កាត់បន្ថយស្នាមជាំ អាចម៍រុយ ស្នាមអុជខ្មៅស្នាមសល់ពីការកើតមុន ទប់ស្កាត់ការផលិតពណ៌មេឡានីន ធ្វើឲ្យពណ៌ស្បែកភ្លឺ</p>
+                        <p><i class="fas fa-check"></i> Ginseng Extract ការដកស្រង់យិនស៊ីនជួយឲ្យស្បែកភ្លឺថ្លា ទន់រលោង កាត់បន្ថយការហើមនិងរលាក</p>
+                        <p><i class="fas fa-check"></i>  Aloe Vera Extract ផ្តល់សំណើមដល់ស្បែក ធ្វើឱ្យស្បែករលោង ជួយជំរុញស្បែកអោយភ្លឺ</p>
+                        <p><i class="fas fa-check"></i> FOR ALL SKIN TYPES (សម្រាប់គ្រប់ប្រភេទស្បែក)</p>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61573582633020" class="cta-button">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card reverse">
+                <div class="product-image">
+                    <img src="M12.jpeg" alt="SK.Sophea Rice Mask">
+                </div>
+                <div class="product-details">
+                    <h3>NATURAL RICE MASK | អត្ថប្រយោជន៍</h3>
+                    <div class="product-features">
+                        <p><i class="fas fa-check"></i> បំប៉នថែទាំស្បែកមុខទន់រលោង</p>
+                        <p><i class="fas fa-check"></i> ស្បែកមុខកាន់តែមានសំណើមភ្លឺថ្លា</p>
+                        <p><i class="fas fa-check"></i> បំបាត់ស្នាមអុជខ្មៅស្នាមអាចម៍រុយ</p>
+                        <p><i class="fas fa-check"></i> ប្រើប្រាស់បានជាប្រចាំរាល់សប្តាហ៍</p>
+                        
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61573582633020" class="cta-button">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Customer Love</h2>
+            <p class="section-subtitle">What our customers say about our products</p>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The sunscreen is amazing! It doesn't leave a white cast and makes my skin glow."</p>
+                    <div class="customer">
+                        <strong>- Srey Nich</strong>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"After using the Dear Dirin Cream for a month, my dark spots have visibly lightened."</p>
+                    <div class="customer">
+                        <strong>- Vannak</strong>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"The Sun Gel is perfect under makeup. My skin stays matte all day long!"</p>
+                    <div class="customer">
+                        <strong>- Ratha</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">SK.<span>Sophea</span></a>
+                    <p>Premium skincare for radiant, healthy skin</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61573582633020">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025.Sophea. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-    </body>
+    <script src="main.js"></script>
+</body>
 </html>
