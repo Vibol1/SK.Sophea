@@ -398,3 +398,117 @@
                 width: 40%;
             }
         }
+
+/* Image Modal Styles */
+#imageModal .modal-content {
+  background: transparent;
+  border: none;
+}
+
+#imageModal .modal-body {
+  padding: 0;
+}
+
+#imageModal .carousel-item img {
+  max-height: 80vh;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+  object-fit: contain;
+}
+
+#imageModal .carousel-control-prev,
+#imageModal .carousel-control-next {
+  width: 15%;
+  opacity: 1;
+}
+
+#imageModal .carousel-control-prev-icon,
+#imageModal .carousel-control-next-icon {
+  background-color: rgba(255, 107, 139, 0.8);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+  transition: var(--transition);
+}
+
+#imageModal .carousel-control-prev-icon:hover,
+#imageModal .carousel-control-next-icon:hover {
+  background-color: var(--primary);
+  transform: scale(1.1);
+}
+
+#imageModal .modal-dialog {
+  max-width: 95%;
+  margin: 2rem auto;
+}
+
+#imageModal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  color: var(--white);
+  opacity: 0.8;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+#imageModal .close:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+  #imageModal .carousel-item img {
+    max-height: 60vh;
+   border-radius: 8px; 
+  }
+  
+  #imageModal .carousel-control-prev,
+  #imageModal .carousel-control-next {
+    width: 20%;
+  }
+  
+  #imageModal .carousel-control-prev-icon,
+  #imageModal .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #imageModal .close {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #imageModal .carousel-item img {
+    max-height: 50vh;
+    border-radius: 8px; 
+  }
+  
+  #imageModal .modal-dialog {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px; 
+  }
+}
+
+#productCarousel .carousel-item {
+  transition: transform 0.6s ease-in-out;
+}

@@ -98,7 +98,7 @@
             </div>
             
          
-            <div class="row product-card g-0 mb-5" data-aos="fade-up">
+            <div class="row product-card g-0 mb-5" data-aos="fade-up" id="suncreen">
                 <div class="col-lg-6 product-img-container">
                     <img src="sunscreen1.jpg" alt="SK.Sophea Sunscreen" class="product-img">
                     <div class="product-badge animate__animated animate__pulse animate__infinite">BESTSELLER</div>
@@ -120,7 +120,7 @@
             </div>
             
            
-            <div class="row product-card g-0 mb-5 flex-lg-row-reverse" data-aos="fade-up">
+            <div class="row product-card g-0 mb-5 flex-lg-row-reverse" data-aos="fade-up" id="gel">
                 <div class="col-lg-6 product-img-container">
                     <img src="gel2.jpg" alt="SK.Sophea Sun Gel" class="product-img">
                     <div class="product-badge animate__animated animate__pulse animate__infinite">NEW</div>
@@ -144,7 +144,7 @@
             </div>
             
         
-            <div class="row product-card g-0 mb-5" data-aos="fade-up">
+            <div class="row product-card g-0 mb-5" data-aos="fade-up" id="dear">
                 <div class="col-lg-6 product-img-container">
                     <img src="skincare1.jpg" alt="SK.Sophea Dear Dirin Cream" class="product-img">
                 </div>
@@ -167,7 +167,7 @@
             </div>
             
           
-            <div class="row product-card g-0 flex-lg-row-reverse" data-aos="fade-up">
+            <div class="row product-card g-0 flex-lg-row-reverse" data-aos="fade-up" id="ricemask">
                 <div class="col-lg-6 product-img-container">
                     <img src="M12.jpeg" alt="SK.Sophea Rice Mask" class="product-img">
                 </div>
@@ -266,12 +266,6 @@
                 <div class="col-lg-4">
                     <div class="footer-logo mb-3">SK.<span>Sophea</span></div>
                     <p>Premium skincare for radiant, healthy skin. Formulated with care in Cambodia.</p>
-                    <!-- <div class="mt-4">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
-                    </div> -->
                 </div>
                 
                 <div class="col-lg-2 col-md-4">
@@ -287,10 +281,10 @@
                 <div class="col-lg-3 col-md-4">
                     <h5 class="text-white mb-3">Products</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Sunscreen</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Sun Gel</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Dear Dirin Cream</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Rice Mask</a></li>
+                        <li class="nav-item mb-2"><a href="#suncreen" class="nav-link p-0 text-white-50">Sunscreen</a></li>
+                        <li class="nav-item mb-2"><a href="#gel" class="nav-link p-0 text-white-50">Sun Gel</a></li>
+                        <li class="nav-item mb-2"><a href="#dear" class="nav-link p-0 text-white-50">Dear Dirin Cream</a></li>
+                        <li class="nav-item mb-2"><a href="#ricemask" class="nav-link p-0 text-white-50">Rice Mask</a></li>
                     </ul>
                 </div>
                 
@@ -309,6 +303,29 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+          <div class="modal-body p-0 text-center">
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Carousel items will be added dynamically -->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <a href="#" class="btn btn-primary btn-lg back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
